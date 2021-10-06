@@ -97,7 +97,7 @@ export default {
             this.$store.dispatch("editUser", newUser);
             this.$router.push('/');
          } else {
-            alert('niet verzonden)
+            alert('niet verzonden);
          }
      },
     validate() {
