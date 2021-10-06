@@ -26,7 +26,7 @@
                     </tr>
                     <tr v-for="user in userDetails" :key="user.id + 1">
                         <td>email: {{user.email}}</td>
-                        <td>type: {{user.title}}</td>
+                        <td>type: {{user.type}}</td>
                     </tr>
                 </tbody>
                 </table>
