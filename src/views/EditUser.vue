@@ -74,7 +74,7 @@ export default {
            name:"",
            phone: "",
            email: "",
-           title: ""
+           type: ""
         }
   },
   created() {
@@ -82,7 +82,7 @@ export default {
         this.name = this.$store.state.userDeatils[0].name;
         this.phone = this.$store.state.userDeatils[0].phone;
         this.email = this.$store.state.userDeatils[0].email;
-        this.title = this.$store.state.userDeatils[0].title;
+        this.type = this.$store.state.userDeatils[0].type;
   },
   methods: {
      onSubmit() {
@@ -91,7 +91,7 @@ export default {
                 name: this.name,
                 phone: this.phone,
                 email: this.email,
-                title: this.title
+                type: this.type
          }
          if(!this.validate()) {
             this.$store.dispatch("editUser", newUser);
@@ -107,7 +107,7 @@ export default {
   },
   computed: {
     isComplete () {
-        return this.name && this.email && this.phone && this.title;
+        return this.name && this.email && this.phone && this.type;
     }
   }
 }
