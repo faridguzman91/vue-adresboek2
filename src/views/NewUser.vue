@@ -54,7 +54,7 @@
 
                 <div class="row control-button">
                     <div class="col-md-12">
-                        <button class="btn btn-secondary btn-orange" type="submit" :disabled='!isComplete'>Save</button>
+                        <button class="btn btn-secondary btn-orange" type="submit" :disabled='!isComplete'>opslaan</button>
                         <router-link  class="btn btn-secondary btn-gray" to="/">annuleren</router-link>
                     </div>    
                 </div>
