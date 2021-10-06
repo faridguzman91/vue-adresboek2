@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group" :class="{ 'has-error': errors.has('title') }">
-                            <label for="title">type<sup>*</sup>:</label>
+                            <label for="type">type<sup>*</sup>:</label>
                             <input v-validate="'required'" v-model="type" class="form-control" id="type" name="type" type="text" tabindex="2" />
                             <div v-show="errors.has('type')" class="help-block">
                                     {{ errors.first('type') }}
